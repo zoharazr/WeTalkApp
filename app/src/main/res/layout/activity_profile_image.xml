@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".ProfileImageActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/shared_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Profile Picture"
+        android:layoutDirection="ltr"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/shared_toolbar"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_shred_profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:src="@drawable/profile_image"
+            android:scaleType="centerCrop"
+            android:transitionName="shared_profile_image" />
+
+        <ImageView
+            android:id="@+id/shared_profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:src="@drawable/profile_image"
+            android:scaleType="centerCrop"
+            android:transitionName="shared_profile_image" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

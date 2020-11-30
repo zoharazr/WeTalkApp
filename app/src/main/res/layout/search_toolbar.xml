@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:background="@color/colorMenu"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search..."
+        android:textColorHint="@color/textColor"
+        android:textColor="@color/textColor"
+        android:background="@android:color/transparent"/>
+
+</androidx.appcompat.widget.Toolbar>
